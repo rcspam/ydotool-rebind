@@ -29,13 +29,25 @@ A wrapper for `ydotool` that translates keyboard input from non-QWERTY layouts t
 
 ## Installation
 
+**Requirements:** `ydotool` installed, Bash 4.0+, root access
+
+### Debian/Ubuntu (.deb)
+
+Download the latest `.deb` from the [releases page](https://github.com/rcspam/ydotool-rebind/releases):
+
 ```bash
-git clone https://github.com/david-vct/ydotool-rebind.git
-cd ydotool-rebind
-sudo ./install.sh
+sudo dpkg -i ydotool-rebind_2.0.0_all.deb
 ```
 
-**Requirements:** `ydotool` installed, Bash 4.0+, root access
+### Other distributions (tar.gz)
+
+Download the latest `tar.gz` from the [releases page](https://github.com/rcspam/ydotool-rebind/releases):
+
+```bash
+tar xzf ydotool-rebind-2.0.0.tar.gz
+cd ydotool-rebind-2.0.0
+sudo ./install.sh
+```
 
 ## Configuration
 
