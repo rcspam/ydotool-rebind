@@ -53,6 +53,16 @@ cd ydotool-rebind-2.0.0
 sudo ./install.sh
 ```
 
+### Uninstall
+
+```bash
+# .deb
+sudo dpkg -r ydotool-rebind
+
+# tar.gz
+sudo ./uninstall.sh
+```
+
 ## Configuration
 
 The layout is detected automatically by cascade:
@@ -141,12 +151,6 @@ Pull requests for new layouts are welcome!
 ```bash
 DEBUG=1 ydotool type "test"
 # Log: /tmp/ydotool-translate-debug.log
-```
-
-## Uninstall
-
-```bash
-sudo ./uninstall.sh
 ```
 
 ## License
