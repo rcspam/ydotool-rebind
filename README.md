@@ -29,6 +29,8 @@ This is a fork of [david-vct/ydotool-rebind](https://github.com/david-vct/ydotoo
 
 > Only the `fr` layout has been tested on real hardware. Other layouts (de, be, it, es) were built from XKB symbol files and need community testing. Contributions and bug reports welcome!
 
+Missing your layout? You can [add it yourself](#adding-a-new-layout) — it only takes a few lines.
+
 ## Installation
 
 **Requirements:** `ydotool` installed, Bash 4.0+, root access
