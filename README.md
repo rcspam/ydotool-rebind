@@ -101,6 +101,39 @@ ydotool mousemove 100 100
 - Ligatures: ae, oe
 - All layout-specific symbols and key positions
 
+## Adding a new layout
+
+You can add support for any keyboard layout by creating a layout file in `layouts/`:
+
+1. Create `layouts/xx.sh` (where `xx` is the XKB layout code)
+2. Define a `KEYMAP` array mapping each character to its QWERTY equivalent
+3. Only map characters that differ from QWERTY — unmapped characters pass through unchanged
+4. Use `/usr/share/X11/xkb/symbols/xx` as reference for key positions
+
+Example for a minimal layout:
+
+```bash
+#!/bin/bash
+# Example layout: only map what differs from QWERTY
+KEYMAP=(
+    ['z']='y'     # if z and y are swapped
+    ['y']='z'
+    ['ñ']=';'     # special character at QWERTY ; position
+)
+```
+
+For dead key accents, use multi-character values. The value is sent directly to ydotool without re-translation:
+
+```bash
+    ['â']='[q'    # dead_circumflex (QWERTY [) + a (QWERTY q on AZERTY)
+```
+
+Test with: `YDOTOOL_LAYOUT=xx ydotool type "test text"`
+
+After installation, copy your layout to `/etc/ydotool-rebind/layouts/`.
+
+Pull requests for new layouts are welcome!
+
 ## Debug
 
 ```bash
