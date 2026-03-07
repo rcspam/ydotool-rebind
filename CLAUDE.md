@@ -84,7 +84,7 @@ sudo ./uninstall.sh
 
 ### Installation via .deb
 ```bash
-sudo dpkg -i ydotool-rebind_X.X.X_all.deb
+sudo dpkg -i ydotool-rebind_2.0.0_all.deb
 # Uninstall:
 sudo dpkg -r ydotool-rebind
 ```
