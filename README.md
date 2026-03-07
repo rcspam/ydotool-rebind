@@ -57,7 +57,7 @@ sudo ./install.sh
 
 ```bash
 # .deb
-sudo dpkg -r ydotool-rebind
+sudo apt remove ydotool-rebind
 
 # tar.gz
 sudo ./uninstall.sh
