@@ -25,6 +25,8 @@ A wrapper for `ydotool` that translates keyboard input from non-QWERTY layouts t
 | `es`   | Spanish | QWERTY-based, ñ, ç, ¡/¿, dead keys for accents |
 | `us`   | US QWERTY | Passthrough (no translation) |
 
+> Only the `fr` layout has been tested on real hardware. Other layouts (de, be, it, es) were built from XKB symbol files and need community testing. Contributions and bug reports welcome!
+
 ## Installation
 
 ```bash
