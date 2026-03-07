@@ -2,7 +2,7 @@
 
 A wrapper for `ydotool` that translates keyboard input from non-QWERTY layouts to QWERTY, allowing proper text input with AZERTY, QWERTZ, and other keyboard layouts.
 
-> **Note:** Si vous démarrez un nouveau projet, considérez [dotool](https://git.sr.ht/~geb/dotool) qui supporte nativement les layouts clavier via `DOTOOL_XKB_LAYOUT`. ydotool-rebind est destiné aux utilisateurs qui ont déjà `ydotool` dans leur workflow.
+> **Note:** If you're starting a new project, consider [dotool](https://git.sr.ht/~geb/dotool) which natively supports keyboard layouts via `DOTOOL_XKB_LAYOUT`. ydotool-rebind is intended for users who already have `ydotool` in their workflow.
 
 ## What is this?
 
