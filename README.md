@@ -2,6 +2,8 @@
 
 A wrapper for `ydotool` that translates keyboard input from non-QWERTY layouts to QWERTY, allowing proper text input with AZERTY, QWERTZ, and other keyboard layouts.
 
+> **Note:** Si vous démarrez un nouveau projet, considérez [dotool](https://git.sr.ht/~geb/dotool) qui supporte nativement les layouts clavier via `DOTOOL_XKB_LAYOUT`. ydotool-rebind est destiné aux utilisateurs qui ont déjà `ydotool` dans leur workflow.
+
 ## What is this?
 
 `ydotool` is a Linux keyboard/mouse automation tool that internally uses QWERTY layout regardless of your system keyboard layout. This wrapper automatically translates input to QWERTY before passing it to `ydotool`.
